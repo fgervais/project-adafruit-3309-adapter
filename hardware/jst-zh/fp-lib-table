@@ -1,0 +1,3 @@
+(fp_lib_table
+  (lib (name "S6B-ZR-SM4A-TF(LF)(SN)")(type KiCad)(uri "${KIPRJMOD}/kicad-library/S6B-ZR-SM4A-TF(LF)(SN)")(options "")(descr ""))
+)
