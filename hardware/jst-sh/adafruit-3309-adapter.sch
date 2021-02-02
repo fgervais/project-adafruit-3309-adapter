@@ -1,0 +1,196 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Connector:Conn_01x08_Female J2
+U 1 1 60165202
+P 2800 2650
+F 0 "J2" H 2828 2626 50  0000 L CNN
+F 1 "Conn_01x08_Female" H 2828 2535 50  0001 L CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x08_P2.54mm_Vertical_SMD_Pin1Right" H 2800 2650 50  0001 C CNN
+F 3 "~" H 2800 2650 50  0001 C CNN
+	1    2800 2650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x08_Female J3
+U 1 1 60165E9C
+P 3550 2650
+F 0 "J3" H 3578 2626 50  0000 L CNN
+F 1 "Conn_01x08_Female" H 3578 2535 50  0001 L CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x08_P2.54mm_Vertical_SMD_Pin1Right" H 3550 2650 50  0001 C CNN
+F 3 "~" H 3550 2650 50  0001 C CNN
+	1    3550 2650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2600 2350 2450 2350
+$Comp
+L power:+5V #PWR0101
+U 1 1 60170538
+P 2450 2250
+F 0 "#PWR0101" H 2450 2100 50  0001 C CNN
+F 1 "+5V" H 2465 2423 50  0000 C CNN
+F 2 "" H 2450 2250 50  0001 C CNN
+F 3 "" H 2450 2250 50  0001 C CNN
+	1    2450 2250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2450 2350 2450 2250
+NoConn ~ 2600 2450
+$Comp
+L power:GND #PWR0102
+U 1 1 601747DF
+P 2450 2600
+F 0 "#PWR0102" H 2450 2350 50  0001 C CNN
+F 1 "GND" H 2455 2427 50  0000 C CNN
+F 2 "" H 2450 2600 50  0001 C CNN
+F 3 "" H 2450 2600 50  0001 C CNN
+	1    2450 2600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2600 2550 2450 2550
+Wire Wire Line
+	2450 2550 2450 2600
+Text Label 3100 2550 0    50   ~ 0
+DTR
+NoConn ~ 2600 2750
+NoConn ~ 2600 2850
+NoConn ~ 2600 2950
+NoConn ~ 2600 3050
+NoConn ~ 2600 2650
+$Comp
+L power:PWR_FLAG #FLG0101
+U 1 1 6017AC4A
+P 2450 2350
+F 0 "#FLG0101" H 2450 2425 50  0001 C CNN
+F 1 "PWR_FLAG" V 2450 2477 50  0000 L CNN
+F 2 "" H 2450 2350 50  0001 C CNN
+F 3 "~" H 2450 2350 50  0001 C CNN
+	1    2450 2350
+	0    -1   -1   0   
+$EndComp
+Connection ~ 2450 2350
+$Comp
+L power:PWR_FLAG #FLG0102
+U 1 1 6017B95B
+P 2450 2550
+F 0 "#FLG0102" H 2450 2625 50  0001 C CNN
+F 1 "PWR_FLAG" V 2450 2677 50  0000 L CNN
+F 2 "" H 2450 2550 50  0001 C CNN
+F 3 "~" H 2450 2550 50  0001 C CNN
+	1    2450 2550
+	0    -1   -1   0   
+$EndComp
+Connection ~ 2450 2550
+NoConn ~ 3350 2350
+NoConn ~ 3350 2450
+NoConn ~ 3350 2650
+Wire Wire Line
+	3350 2550 3100 2550
+Text Label 3100 2750 0    50   ~ 0
+TX
+Wire Wire Line
+	3350 2750 3100 2750
+Text Label 3100 2850 0    50   ~ 0
+RX
+Wire Wire Line
+	3350 2850 3100 2850
+Text Label 3100 2950 0    50   ~ 0
+RTS
+Wire Wire Line
+	3350 2950 3100 2950
+NoConn ~ 3350 3050
+$Comp
+L power:GND #PWR0103
+U 1 1 601911E4
+P 1950 3300
+F 0 "#PWR0103" H 1950 3050 50  0001 C CNN
+F 1 "GND" H 1955 3127 50  0000 C CNN
+F 2 "" H 1950 3300 50  0001 C CNN
+F 3 "" H 1950 3300 50  0001 C CNN
+	1    1950 3300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1950 3300 1950 3200
+$Comp
+L power:+5V #PWR0104
+U 1 1 601924E1
+P 1950 4050
+F 0 "#PWR0104" H 1950 3900 50  0001 C CNN
+F 1 "+5V" H 1965 4223 50  0000 C CNN
+F 2 "" H 1950 4050 50  0001 C CNN
+F 3 "" H 1950 4050 50  0001 C CNN
+	1    1950 4050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2450 4100 1950 4100
+Wire Wire Line
+	1950 4100 1950 4050
+Wire Wire Line
+	2450 3600 2400 3600
+Wire Wire Line
+	2400 3600 2400 3200
+Wire Wire Line
+	2400 3200 1950 3200
+Text Label 2200 3700 0    50   ~ 0
+RTS
+Wire Wire Line
+	2450 3700 2200 3700
+Text Label 2200 3800 0    50   ~ 0
+DTR
+Wire Wire Line
+	2450 3800 2200 3800
+Text Label 2200 3900 0    50   ~ 0
+TX
+Wire Wire Line
+	2450 3900 2200 3900
+Text Label 2200 4000 0    50   ~ 0
+RX
+Wire Wire Line
+	2450 4000 2200 4000
+$Comp
+L power:GND #PWR0105
+U 1 1 6019D453
+P 2300 4400
+F 0 "#PWR0105" H 2300 4150 50  0001 C CNN
+F 1 "GND" H 2305 4227 50  0000 C CNN
+F 2 "" H 2300 4400 50  0001 C CNN
+F 3 "" H 2300 4400 50  0001 C CNN
+	1    2300 4400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2300 4400 2300 4300
+Wire Wire Line
+	2450 4300 2300 4300
+$Comp
+L SM06B-SRSS-TB_LF__SN_:SM06B-SRSS-TB(LF)(SN) J1
+U 1 1 601AC3BB
+P 2850 4000
+F 0 "J1" H 3080 4096 50  0000 L CNN
+F 1 "SM06B-SRSS-TB(LF)(SN)" H 3080 4005 50  0000 L CNN
+F 2 "JST_SM06B-SRSS-TB(LF)(SN)" H 2850 4000 50  0001 L BNN
+F 3 "" H 2850 4000 50  0001 L BNN
+F 4 "Manufacturer Recommendation" H 2850 4000 50  0001 L BNN "STANDARD"
+F 5 "JST" H 2850 4000 50  0001 L BNN "MANUFACTURER"
+	1    2850 4000
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC
