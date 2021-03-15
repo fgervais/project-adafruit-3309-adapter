@@ -8,3 +8,8 @@
 ### BOM
 
 [Digikey Canada](https://www.digikey.ca/BOM/Create/CreateSharedBom?bomId=8537981)
+
+
+## SH version
+
+![Overview](assets/img/sh/overview.jpeg)
